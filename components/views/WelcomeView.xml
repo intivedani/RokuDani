@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="WelcomeView" extends="Group">
+
+    <script type="text/brightscript" uri="WelcomeView.brs" />
+
+    <children>
+        <Label
+            id="title"
+            text="Who's watching?"
+            translation="[750,250]"/>
+                
+        <RowList 
+            id="rowList"
+            numRows="1"
+            itemComponentName="ProfileItem"
+            translation="[300, 470]"
+            itemSize="[1600,400]" 
+            rowItemSize="[[260, 400]]" 
+            rowItemSpacing="[[30,0]]" 
+            showRowLabel="[false]"
+            drawFocusFeedback="false"/>
+    </children>
+
+</component>
