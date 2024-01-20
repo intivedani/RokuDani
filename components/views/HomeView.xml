@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="HomeView" extends="Group">
+
+     <interface>
+        <field id="profileInfo" type="node" onChange="onProfileInfoChange" />
+    </interface>
+
+    <script type="text/brightscript" uri="HomeView.brs" />
+
+    <children >
+        <ContentInfo
+            id="info" 
+            translation="[70,250]"
+            title="THE LION KING" 
+            season="Movie"
+            year="1995"
+            gender="Infantil"
+            description="Set in a kingdom of lions in Africa, The Lion King tells the story of Simba, a lion cub who is to succeed his father, Mufasa, as King of the Pride Lands; however, after his paternal uncle Scar kills Mufasa to seize the throne, Simba is tricked into believing he was responsible for his father's death and flees into exile." >
+         </ContentInfo>
+
+           <RowList 
+            id="rowList"
+            numRows="50"
+            itemComponentName="CatalogItem"
+            translation="[70, 650]"
+            itemSize="[1750,400]" 
+            rowItemSize="[[260, 400]]" 
+            rowItemSpacing="[[30,0]]" 
+            showRowLabel="[false]"
+            drawFocusFeedback="false">
+            </RowList>
+          
+        <Poster 
+            id="profileImage"
+            translation="[75, 50]"
+            width="120"
+            height="120">
+        </Poster>
+
+        <Label 
+            id="profileName"
+            translation="[75, 185]">
+        </Label>
+
+    </children>
+
+</component>

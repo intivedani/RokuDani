@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="MainScene" extends="Scene">
+
+    <interface>
+        <function name="displayHome"/>
+        <function name="displayWelcome"/>
+    </interface>
+
+    <script type="text/brightscript" uri="MainScene.brs" />
+
+    <children >
+        <HomeView 
+            id="homeView" />
+        <WelcomeView 
+            id="welcomeView" />
+    </children>
+
+</component>
